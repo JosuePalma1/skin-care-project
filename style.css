@@ -1,0 +1,111 @@
+/* Estilos para Unidad Educativa Israel - Proyecto Hábitos Saludables */
+
+body {
+  --heading-font: "Cormorant Garamond", "Nanum Myeongjo", Georgia, serif;
+  --heading-font-weight: 400;
+  --heading-color: #B2856E;
+  --heading-line-height: 1.24;
+  --bs-body-font-family: "Open Sans", Arial, serif;
+  --bs-body-font-size: 16px;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.7;
+  --bs-body-color: #6B6765;
+  --bs-body-color-rgb: 1.6, 1.6, 1.6;
+  --bs-body-bg-rgb: 249, 245, 243;
+  --bs-body-bg: #F9F5F3;
+  --bs-primary: #B2856E;
+  --bs-secondary: #EAE3DF;
+  --bs-black: #111;
+  --bs-white: #fff;
+  --bs-light: #f8f8f8;
+  --bs-dark: #212529;
+  --bs-gray: #9aa1a7;
+  --bs-gray-dark: #6B6765;
+  --bs-primary-rgb: 178, 133, 110;
+  --bs-secondary-rgb: 234, 227, 223;
+  --bs-black-rgb: 17, 17, 17;
+  --bs-light-rgb: 241, 241, 240;
+  --bs-dark-rgb: 33, 37, 41;
+  --bs-link-color: #111;
+  --bs-link-color-rgb: 17, 17, 17;
+  --bs-link-decoration: underline;
+  --bs-link-hover-color: #111;
+  --bs-link-hover-color-rgb: 178, 133, 110;
+  --bs-border-color: #DAD1CC !important;
+  --bs-border-secondary-color: #DAD1CC !important;
+  letter-spacing: 0.03rem;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  color: var(--heading-color);
+  line-height: var(--heading-line-height);
+}
+
+h1, h2, h3 { margin: 25px 0; }
+h5, h6 { letter-spacing: 1px; }
+h1, .h1 { font-size: 9.5rem; }
+h2, .h2 { font-size: 3.6rem; }
+h3, .h3 { font-size: 2.8rem; }
+h4, .h4 { font-size: 1.8rem; }
+h5, .h5 { font-size: 1.4rem; }
+h6, .h6 { font-size: 1rem; }
+
+a { text-decoration: none; }
+a:hover { color: var(--bs-primary); }
+input:focus { outline: none; }
+
+.container-fluid { max-width: 1770px; }
+
+@media (min-width: 1600px) {
+  .container, .container-lg { max-width: 1610px; }
+  .container, .container-md { max-width: 1200px; }
+}
+
+.list-group-item {
+  --bs-list-group-item-padding-x: 0;
+  --bs-list-group-border-width: 0;
+}
+
+.btn { --bs-btn-border-radius: 0; }
+
+.btn-primary {
+  --bs-btn-color: var(--bs-light);
+  --bs-btn-bg: var(--bs-primary);
+  --bs-btn-border-color: var(--bs-primary);
+  --bs-btn-hover-color: var(--bs-light);
+  --bs-btn-hover-bg: var(--bs-dark);
+  --bs-btn-hover-border-color: var(--bs-dark);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: var(--bs-light);
+  --bs-btn-active-bg: var(--bs-dark);
+  --bs-btn-active-border-color: var(--bs-dark);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: var(--bs-light);
+  --bs-btn-disabled-bg: var(--bs-primary);
+  --bs-btn-disabled-border-color: var(--bs-primary);
+}
+
+.btn-outline-gray {
+  border: 1px solid var(--bs-secondary);
+  background: transparent;
+}
+.btn-outline-gray:hover { background: var(--bs-secondary); }
+
+.btn-group-lg>.btn, .btn-lg {
+  --bs-btn-padding-y: 1rem;
+  --bs-btn-padding-x: 2.8rem;
+  --bs-btn-font-size: 1.25rem;
+}
+
+.navbar .nav-link:focus, 
+.navbar .nav-link:hover { color: var(--bs-primary); }
+
+.navbar .offcanvas.show a.nav-link { font-size: 2rem; }
+
+@media (min-width: 1200px) {
+  .display-1 { font-size: calc(5rem + 4.5vw); line-height: 1; }
+  .display-2 { font-size: 4.75rem; }
+  .display-6 { font-size: 2.25rem; }
+}
