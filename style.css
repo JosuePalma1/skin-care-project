@@ -262,25 +262,25 @@ img {
    tamaño grande, colores suaves
    =================================== */
 .btn-primary {
-  background-color: var(--color-primary);
-  border-color: var(--color-primary);
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
   color: var(--color-white);
-  border-radius: 30px; /* Muy redondeado */
-  padding: 0.85rem 2rem;
+  border-radius: 30px;
+  padding: 0.9rem 2.2rem;
   font-family: var(--font-body);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 1rem;
   border: none;
   cursor: pointer;
   transition: var(--transition);
+  box-shadow: 0 4px 15px rgba(212, 165, 165, 0.4);
 }
 
 .btn-primary:hover {
-  background-color: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-hover);
-  opacity: 0.9;
+  background-color: #c99494;
+  border-color: #c99494;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(212, 165, 165, 0.5);
 }
 
 .btn-outline-primary {
@@ -337,23 +337,25 @@ img {
 }
 
 .hero-title {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(3rem, 7vw, 5rem);
   color: var(--color-heading);
-  margin-bottom: 1rem;
-  line-height: 1.1;
+  margin-bottom: 1.25rem;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
 }
 
 .hero-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   color: var(--color-primary);
   font-weight: 500;
   margin-bottom: 1.5rem;
 }
 
 .hero-text {
-  font-size: 1.1rem;
-  max-width: 500px;
-  margin-bottom: 2rem;
+  font-size: 1.15rem;
+  max-width: 520px;
+  margin-bottom: 2.5rem;
+  line-height: 1.8;
 }
 
 .hero-buttons {
@@ -481,14 +483,14 @@ img {
 .consejos-list {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 2rem;
 }
 
 .consejo-item {
   display: flex;
-  gap: 1.25rem;
+  gap: 1.5rem;
   align-items: flex-start;
-  padding: 1.5rem;
+  padding: 1.75rem;
   background: var(--color-white);
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-card);
@@ -532,16 +534,16 @@ img {
 .habitos-content {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 1.5rem;
 }
 
 .habito-card {
   background: var(--color-white);
-  padding: 1.5rem;
+  padding: 1.75rem;
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-card);
   position: relative;
-  padding-left: 5rem;
+  padding-left: 5.5rem;
   transition: var(--transition);
 }
 
@@ -910,7 +912,7 @@ img {
    FOOTER
    =================================== */
 .site-footer {
-  background: var(--color-heading);
+  background: linear-gradient(135deg, #4a4540 0%, #3d3835 100%);
   color: var(--color-white);
   padding: 4rem 0 1.5rem;
 }
