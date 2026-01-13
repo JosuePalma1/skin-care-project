@@ -1,146 +1,304 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <title>Hábitos Saludables - Unidad Educativa Israel</title>
+    <title>Dermactive - Cuida tu piel, cuida de ti</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Estudiantes Unidad Educativa Israel">
-    <meta name="keywords" content="unidad educativa israel, habitos, cuidado de la piel, videos educativos">
-    <meta name="description" content="Sitio escolar con recursos y videos sobre hábitos saludables para el cuidado de la piel.">
+    <meta name="author" content="Dermactive">
+    <meta name="keywords" content="dermatología, cuidado de la piel, skincare, consejos dermatológicos, piel sana, rutina facial">
+    <meta name="description" content="La importancia de cuidar tu piel. Consejos dermatológicos, rutinas de cuidado y hábitos para una piel sana y saludable.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Nanum+Myeongjo:wght@400;700;800&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   </head>
-  <body class="bg-body">
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-      <symbol id="navbar-icon" viewBox="0 0 16 16">
-        <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z" />
-      </symbol>
-      <symbol id="facebook" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4v-8.5Z" />
-      </symbol>
-      <symbol id="instagram" viewBox="0 0 256 256">
-        <path fill="currentColor" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48Zm0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32Zm48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56Zm40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12Z" />
-      </symbol>
-      <symbol id="twitter" viewBox="0 0 24 24">
-        <path fill="currentColor" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23Z" />
-      </symbol>
-    </svg>
-
-    <header id="header" class="site-header border-bottom py-3">
-      <div class="container-fluid">
-        <div class="row">
-          <nav class="navbar navbar-expand-lg">
-            <button class="navbar-toggler d-flex d-lg-none order-3 p-2 border-0 shadow-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar">
-              <svg class="navbar-icon" width="36" height="36">
-                <use xlink:href="#navbar-icon"></use>
-              </svg>
-            </button>
-            <a href="#" class="navbar-brand fw-bold text-uppercase d-lg-none">U.E. Israel</a>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="bdNavbar">
-              <div class="offcanvas-body align-items-center">
-                <div class="offcanvas-header px-4 pb-0">
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-                </div>
-                <div class="d-lg-flex align-items-center w-100 gap-4">
-                  <ul class="navbar-nav text-center text-lg-start flex-lg-row gap-lg-3 ms-lg-5">
-                    <li class="nav-item"><a class="nav-link" href="#intro">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#importancia">¿Por qué cuidarnos?</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#habitos">Hábitos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#recursos">Recursos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#nosotros">Sobre Nosotros</a></li>
-                  </ul>
-                  <a href="#" class="navbar-brand fw-bold text-uppercase ms-lg-auto">U.E. Israel</a>
-                </div>
-              </div>
-            </div>
-          </nav>
-        </div>
+  <body>
+    <!-- Header / Navegación -->
+    <header id="header" class="site-header py-3 sticky-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a href="#" class="navbar-brand">
+            <span class="logo-icon">🌿</span>
+            <span class="logo-text">Dermactive</span>
+          </a>
+          <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto gap-lg-4">
+              <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="#capas">Capas de la Piel</a></li>
+              <li class="nav-item"><a class="nav-link" href="#habitos">Hábitos</a></li>
+              <li class="nav-item"><a class="nav-link" href="#tratamientos">Cuidado</a></li>
+              <li class="nav-item"><a class="nav-link" href="#alimentacion">Alimentación</a></li>
+              <li class="nav-item"><a class="nav-link" href="#glosario">Glosario</a></li>
+              <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+            </ul>
+            <a href="#nosotros" class="btn btn-primary btn-cita">Sobre Nosotros</a>
+          </div>
+        </nav>
       </div>
     </header>
 
-    <section id="intro" class="py-5">
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
       <div class="container">
-        <div class="row align-items-center g-4">
+        <div class="row align-items-center min-vh-75">
           <div class="col-lg-6">
-            <span class="badge bg-primary rounded-pill mb-3 fs-5 px-4 py-2">Proyecto Escolar 2026</span>
-            <h1 class="display-4 fw-bold">Hábitos en el Cuidado de la Piel</h1>
-            <p class="lead">Espacio creado por estudiantes de 2do de bachillerato para compartir consejos, rutinas y videos cortos sobre cómo mantener una piel sana usando recursos accesibles.</p>
-            <div class="d-flex gap-3">
-              <a class="btn btn-primary btn-lg" href="#videos">Ver Videos</a>
-              <a class="btn btn-outline-secondary btn-lg" href="#habitos">Plan Diario</a>
+            <div class="hero-content">
+              <h1 class="hero-title">Cuida tu piel, cuida de ti</h1>
+              <p class="hero-subtitle">La importancia de cuidar tu piel</p>
+              <p class="hero-text">De todos los órganos del cuerpo, la piel es el más versátil. Protege de agentes externos, del calor y el frío, de las bacterias, es impermeable y se repara a sí misma. Tu piel refleja tanto la salud física como la mental.</p>
+              <div class="hero-buttons">
+                <a href="#consejos" class="btn btn-primary btn-lg me-3">Aprende más</a>
+                <a href="#videos" class="btn btn-outline-primary btn-lg">Ver videos</a>
+              </div>
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="images/banner-image1.jpg" alt="Botellas de cuidado" class="img-fluid rounded-4 shadow-sm">
+            <div class="hero-image-container">
+              <img src="images/banner-image1.jpg" alt="Cuidado de la piel" class="hero-image">
+              <div class="hero-decorations">
+                <span class="decoration decoration-1">🌸</span>
+                <span class="decoration decoration-2">🕯️</span>
+                <span class="decoration decoration-3">🌿</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="importancia" class="py-5 bg-light">
+    <!-- Secciones de Tarjetas -->
+    <section id="cards-section" class="py-5">
       <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-6">
-            <img src="images/single-image1.png" alt="Estudiante" class="img-fluid rounded-circle">
+        <div class="row g-4">
+          <!-- Tarjeta Capas de la Piel -->
+          <div class="col-lg-4">
+            <div class="feature-card h-100">
+              <div class="card-icon">
+                <i class="bi bi-layers"></i>
+              </div>
+              <h3>Capas de la Piel</h3>
+              <p>Conoce la estructura de tu piel: epidermis, dermis e hipodermis. Cada capa tiene funciones específicas para protegerte.</p>
+              <a href="#capas" class="btn btn-outline-primary">Conocer más</a>
+            </div>
           </div>
-          <div class="col-lg-6">
-            <h2 class="display-5">¿Por qué es importante?</h2>
-            <p>La piel es nuestro escudo frente al ambiente y refleja nuestro estado de salud. Con pequeños hábitos podemos prevenir irritaciones, acné y manchas causadas por el sol.</p>
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item ps-0">Protege de rayos UV, contaminación y bacterias.</li>
-              <li class="list-group-item ps-0">Una rutina constante evita brotes y resequedad.</li>
-              <li class="list-group-item ps-0">Aprender a leer etiquetas nos permite tomar mejores decisiones.</li>
-            </ul>
+          <!-- Tarjeta Rutina de Cuidado -->
+          <div class="col-lg-4">
+            <div class="feature-card h-100">
+              <div class="card-icon">
+                <i class="bi bi-droplet"></i>
+              </div>
+              <h3>Rutina de Cuidado</h3>
+              <p>Higiene, exfoliación, hidratación y protección. Los cuatro pasos esenciales para mantener tu piel saludable.</p>
+              <a href="#rutina" class="btn btn-outline-primary">Ver rutina</a>
+            </div>
+          </div>
+          <!-- Tarjeta Alimentación -->
+          <div class="col-lg-4">
+            <div class="feature-card h-100">
+              <div class="card-icon">
+                <i class="bi bi-heart-pulse"></i>
+              </div>
+              <h3>Alimentación Saludable</h3>
+              <p>A la piel hay que cuidarla desde adentro. Una dieta sana es la base de una piel linda que no envejezca antes de tiempo.</p>
+              <a href="#alimentacion" class="btn btn-outline-primary">Descubrir</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="habitos" class="py-5">
+    <!-- Sección Capas de la Piel -->
+    <section id="capas" class="section-padding bg-soft">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="display-5">Rutina básica para estudiantes</h2>
-          <p class="text-muted">Pensada para quienes pasan largas jornadas entre clases, tareas y actividades deportivas.</p>
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Anatomía</span>
+          <h2>Capas de la Piel</h2>
+          <p class="section-description">Desde un punto de vista estructural, la piel se compone de varias capas que trabajan en conjunto para desempeñar sus múltiples funciones</p>
+        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <img src="images/single-image1.png" alt="Capas de la piel" class="img-fluid rounded-4 shadow-soft">
+          </div>
+          <div class="col-lg-6">
+            <div class="consejos-list">
+              <div class="consejo-item">
+                <div class="consejo-icon"><i class="bi bi-shield"></i></div>
+                <div class="consejo-content">
+                  <h4>Epidermis</h4>
+                  <p>La capa más superficial actúa como un escudo contra los agentes patógenos y daños físicos o químicos. Contiene las células que dan color a nuestra piel mediante la melanina, proporcionando protección contra la radiación ultravioleta.</p>
+                </div>
+              </div>
+              <div class="consejo-item">
+                <div class="consejo-icon"><i class="bi bi-diagram-3"></i></div>
+                <div class="consejo-content">
+                  <h4>Dermis</h4>
+                  <p>Capa más gruesa y resistente que alberga fibras de colágeno y elastina. Otorga elasticidad y resistencia a la piel. Es el hogar de folículos pilosos, glándulas sebáceas y sudoríparas que regulan la temperatura corporal.</p>
+                </div>
+              </div>
+              <div class="consejo-item">
+                <div class="consejo-icon"><i class="bi bi-droplet-half"></i></div>
+                <div class="consejo-content">
+                  <h4>Hipodermis</h4>
+                  <p>La capa más profunda, compuesta principalmente por tejido adiposo. Sirve como aislante térmico y amortiguador contra impactos, además de ser una fuente importante de energía para el cuerpo.</p>
+                </div>
+              </div>
+              <div class="consejo-item">
+                <div class="consejo-icon"><i class="bi bi-hand-index"></i></div>
+                <div class="consejo-content">
+                  <h4>Anejos Cutáneos</h4>
+                  <p>Pelos y uñas que tienen funciones específicas. Los pelos ayudan a regular la temperatura corporal y actúan como barrera sensorial, mientras que las uñas protegen las extremidades.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Rutina de Limpieza -->
+    <section id="habitos" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Rutina</span>
+          <h2>¿Cuándo limpiar nuestra piel?</h2>
+          <p class="section-description">Una rutina adecuada de limpieza es la base de una piel saludable</p>
+        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-2">
+            <img src="images/banner-image1.jpg" alt="Rutina de cuidado" class="img-fluid rounded-4 shadow-soft">
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <div class="habitos-content">
+              <div class="habito-card">
+                <span class="habito-number">01</span>
+                <h4>Higiene</h4>
+                <p>Lava tu rostro por la mañana y por la noche con productos adecuados para tu tipo de piel. Elimina el exceso de grasa e impurezas.</p>
+              </div>
+              <div class="habito-card">
+                <span class="habito-number">02</span>
+                <h4>Exfoliación</h4>
+                <p>Realiza una exfoliación 1-2 veces por semana para eliminar células muertas y renovar la piel.</p>
+              </div>
+              <div class="habito-card">
+                <span class="habito-number">03</span>
+                <h4>Hidratación</h4>
+                <p>Aplica crema hidratante según tu tipo de piel para mantener la barrera cutánea fuerte y saludable.</p>
+              </div>
+              <div class="habito-card">
+                <span class="habito-number">04</span>
+                <h4>Protección solar</h4>
+                <p>Aplica protector solar 30 min antes de la exposición. Renuévalo cada 2 horas, incluso en días nublados.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Cuidado Diario -->
+    <section id="tratamientos" class="section-padding bg-soft">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Cuidado Diario</span>
+          <h2>Paso a paso para tu rutina</h2>
+          <p class="section-description">Sigue estos pasos esenciales para mantener tu piel saludable</p>
         </div>
         <div class="row g-4">
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">Mañana</h5>
-                <ul class="mb-0">
-                  <li>Lava tu rostro con agua tibia y un gel neutro.</li>
-                  <li>Aplica hidratante ligero.</li>
-                  <li>Protector solar SPF 50 antes de salir.</li>
-                </ul>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tratamiento-card">
+              <div class="tratamiento-icon"><i class="bi bi-sunrise"></i></div>
+              <h4>Limpieza matutina</h4>
+              <p>Por la mañana elimina el exceso de grasa acumulada durante la noche con un limpiador suave.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">Durante el día</h5>
-                <ul class="mb-0">
-                  <li>Bebe agua (1 vaso cada clase).</li>
-                  <li>Usa papel absorbente si hay brillo.</li>
-                  <li>Reaplica protector solar si estás al aire libre.</li>
-                </ul>
-              </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tratamiento-card">
+              <div class="tratamiento-icon"><i class="bi bi-moon-stars"></i></div>
+              <h4>Limpieza nocturna</h4>
+              <p>Es importísimo remover el maquillaje antes de dormir para permitir la regeneración celular.</p>
             </div>
           </div>
-          <div class="col-md-4">
-            <div class="card h-100 shadow-sm border-0">
-              <div class="card-body">
-                <h5 class="card-title">Noche</h5>
-                <ul class="mb-0">
-                  <li>Retira suciedad con limpiador suave.</li>
-                  <li>Aplica crema reparadora o gel de aloe.</li>
-                  <li>Duerme 8 horas para regenerar la piel.</li>
-                </ul>
+          <div class="col-lg-4 col-md-6">
+            <div class="tratamiento-card">
+              <div class="tratamiento-icon"><i class="bi bi-droplet"></i></div>
+              <h4>Tónico facial</h4>
+              <p>Complementa la limpieza y prepara la piel para absorber mejor los siguientes productos.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tratamiento-card">
+              <div class="tratamiento-icon"><i class="bi bi-moisture"></i></div>
+              <h4>Crema hidratante</h4>
+              <p>Mantén tu piel hidratada con una crema adecuada para tu tipo de piel (seca, grasa o mixta).</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tratamiento-card">
+              <div class="tratamiento-icon"><i class="bi bi-sun"></i></div>
+              <h4>Protector solar</h4>
+              <p>Aplícalo 30 minutos antes de la exposición al sol y renuévalo cada 2 horas.</p>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="tratamiento-card">
+              <div class="tratamiento-icon"><i class="bi bi-stars"></i></div>
+              <h4>Exfoliación semanal</h4>
+              <p>1-2 veces por semana para eliminar células muertas y renovar la textura de la piel.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Alimentación -->
+    <section id="alimentacion" class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6">
+            <div class="recomendaciones-content">
+              <span class="section-badge">Nutrición</span>
+              <h2>La alimentación también ayuda</h2>
+              <p class="mb-4">A la piel hay que cuidarla desde adentro. Una dieta sana es la base de una piel linda que no envejezca antes de tiempo.</p>
+              <ul class="checklist">
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span><strong>Frutos rojos</strong> - Arándanos, moras y fresas son ricos en antioxidantes que combaten el envejecimiento.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span><strong>Tomate</strong> - Rico en licopeno, protege la piel de los daños causados por el sol.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span><strong>Zanahoria</strong> - Alta en betacaroteno, mejora el tono y la luminosidad de la piel.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span><strong>Proteínas</strong> - Carnes magras, huevos y legumbres ayudan a la regeneración celular.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span><strong>Palta (aguacate)</strong> - Grasas saludables que hidratan la piel desde adentro.</span>
+                </li>
+                <li>
+                  <i class="bi bi-check-circle-fill"></i>
+                  <span><strong>Agua</strong> - Bebe al menos 2 litros diarios para mantener tu piel hidratada.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="recomendaciones-image">
+              <img src="images/single-image1.png" alt="Alimentación saludable" class="img-fluid rounded-4 shadow-soft">
+              <div class="image-badge">
+                <i class="bi bi-heart-fill"></i>
+                <span>Nutre tu piel desde adentro</span>
               </div>
             </div>
           </div>
@@ -148,76 +306,90 @@
       </div>
     </section>
 
-    <section id="videos" class="py-5 bg-light">
+    <!-- Sección Videos -->
+    <section id="videos" class="section-padding bg-soft">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="display-5">Videos explicativos</h2>
-          <p>Seleccionamos contenido confiable y corto. Reproduce desde YouTube para no sobrecargar la página.</p>
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Contenido Audiovisual</span>
+          <h2>Videos de cuidado de la piel</h2>
+          <p class="section-description">Aprende con tutoriales y consejos de expertos en dermatología</p>
         </div>
         <div class="row g-4">
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/QcU6KZJxVdg" title="Protector solar" allowfullscreen></iframe>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/QcU6KZJxVdg" title="Protector solar" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Protección solar diaria</h5>
-                <p class="card-text">Tipos de protector, cómo elegir SPF y cada cuánto reaplicar.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/8XgRRQ0KXU8" title="Rutina sencilla" allowfullscreen></iframe>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Rutina en 5 minutos</h5>
-                <p class="card-text">Pasos básicos para piel mixta usando productos económicos.</p>
+              <div class="video-info">
+                <h5>Protección solar diaria</h5>
+                <p>Tipos de protector, cómo elegir SPF y cada cuánto reaplicar.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/M0vO6K0uK7g" title="Hábitos saludables" allowfullscreen></iframe>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/8XgRRQ0KXU8" title="Rutina sencilla" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Hábitos que afectan la piel</h5>
-                <p class="card-text">Cómo la alimentación y el sueño influyen en el acné.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tipos de piel" allowfullscreen></iframe>
-              </div>
-              <div class="card-body">
-                <h5 class="card-title">Conoce tu tipo de piel</h5>
-                <p class="card-text">Aprende a identificar si tienes piel seca, grasa o mixta.</p>
+              <div class="video-info">
+                <h5>Rutina en 5 minutos</h5>
+                <p>Pasos básicos para piel mixta usando productos económicos.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Hidratación" allowfullscreen></iframe>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/M0vO6K0uK7g" title="Hábitos saludables" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Importancia de la hidratación</h5>
-                <p class="card-text">Cómo mantener tu piel hidratada desde adentro y por fuera.</p>
+              <div class="video-info">
+                <h5>Hábitos que afectan la piel</h5>
+                <p>Cómo la alimentación y el sueño influyen en el acné.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6">
-            <div class="card h-100 border-0 shadow-sm">
-              <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Limpieza facial" allowfullscreen></iframe>
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Tipos de piel" allowfullscreen></iframe>
+                </div>
               </div>
-              <div class="card-body">
-                <h5 class="card-title">Técnicas de limpieza facial</h5>
-                <p class="card-text">Métodos correctos para limpiar tu rostro sin dañar la piel.</p>
+              <div class="video-info">
+                <h5>Conoce tu tipo de piel</h5>
+                <p>Aprende a identificar si tienes piel seca, grasa o mixta.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw" title="Hidratación" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="video-info">
+                <h5>Importancia de la hidratación</h5>
+                <p>Cómo mantener tu piel hidratada desde adentro y por fuera.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="video-card">
+              <div class="video-thumbnail">
+                <div class="ratio ratio-16x9">
+                  <iframe src="https://www.youtube.com/embed/9bZkp7q19f0" title="Limpieza facial" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="video-info">
+                <h5>Técnicas de limpieza facial</h5>
+                <p>Métodos correctos para limpiar tu rostro sin dañar la piel.</p>
               </div>
             </div>
           </div>
@@ -225,140 +397,281 @@
       </div>
     </section>
 
-    <section id="recursos" class="py-5">
+    <!-- Sección Glosario -->
+    <section id="glosario" class="section-padding">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="display-5">Material para descargar</h2>
-          <p>Guías y checklist para imprimir y pegar en tu cuaderno.</p>
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Términos</span>
+          <h2>Glosario Dermatológico</h2>
+          <p class="section-description">Conoce los términos más utilizados en el cuidado de la piel</p>
         </div>
         <div class="row g-4">
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">Checklist semanal</h5>
-                <p>Controla tu consumo de agua, horas de sueño y uso de protector.</p>
-                <a class="btn btn-outline-primary" href="https://drive.google.com" target="_blank">Descargar PDF</a>
-              </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-droplet"></i> Ácido Hialurónico</h4>
+              <p>Sustancia gelatinosa que produce naturalmente el cuerpo, especialmente en la piel, ojos y articulaciones, con la función principal de atraer y retener grandes cantidades de agua para mantener la hidratación, elasticidad y volumen de los tejidos.</p>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="card border-0 shadow-sm h-100">
-              <div class="card-body">
-                <h5 class="card-title">Guía de ingredientes</h5>
-                <p>Diccionario rápido para entender etiquetas y evitar irritaciones.</p>
-                <a class="btn btn-outline-primary" href="https://drive.google.com" target="_blank">Leer en línea</a>
-              </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-stars"></i> Retinol</h4>
+              <p>Forma de vitamina A que estimula la renovación celular, aumenta la producción de colágeno y ayuda a reducir arrugas, manchas y mejorar la textura de la piel. Se recomienda usar por la noche.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-shield"></i> SPF (Factor de Protección Solar)</h4>
+              <p>Medida que indica el nivel de protección que ofrece un producto contra los rayos UVB. Un SPF 30 bloquea aproximadamente el 97% de los rayos UVB cuando se aplica correctamente.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-flower1"></i> Colágeno</h4>
+              <p>Proteína estructural que proporciona firmeza y elasticidad a la piel. Su producción disminuye con la edad, por lo que muchos tratamientos buscan estimular su síntesis.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-water"></i> Niacinamida</h4>
+              <p>Forma de vitamina B3 que ayuda a minimizar poros, controlar la producción de sebo, mejorar la textura de la piel y reducir manchas e inflamación.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-brightness-low"></i> Vitamina C</h4>
+              <p>Potente antioxidante que protege la piel del daño de los radicales libres, ilumina el tono de piel, reduce manchas y estimula la producción de colágeno.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-layers"></i> Barrera Cutánea</h4>
+              <p>Capa más externa de la piel que protege contra agentes externos como bacterias, contaminación y pérdida de agua. Mantenerla saludable es fundamental para una piel equilibrada.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-thermometer-half"></i> pH de la Piel</h4>
+              <p>Nivel de acidez de la piel que normalmente oscila entre 4.5 y 5.5. Usar productos con pH adecuado ayuda a mantener la barrera cutánea saludable y prevenir irritaciones.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-egg"></i> Ceramidas</h4>
+              <p>Lípidos naturales que forman parte de la barrera cutánea. Ayudan a retener la humedad y proteger la piel de irritantes externos. Son esenciales para pieles secas o sensibles.</p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="glosario-item">
+              <h4><i class="bi bi-lightning"></i> AHA y BHA</h4>
+              <p>Ácidos exfoliantes. Los AHA (como el ácido glicólico) exfolian la superficie de la piel, mientras los BHA (como el ácido salicílico) penetran en los poros para limpiarlos profundamente.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="nosotros" class="py-5 bg-light">
+    <!-- Sección Sobre Nosotros -->
+    <section id="nosotros" class="section-padding bg-soft">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="display-5">Sobre Nosotros</h2>
-          <p class="lead text-muted">Estudiantes de 2do de bachillerato comprometidos con la salud y el bienestar</p>
+        <div class="section-header text-center mb-5">
+          <span class="section-badge">Proyecto Escolar</span>
+          <h2>Sobre Nosotros</h2>
+          <p class="section-description">Estudiantes de 2do de bachillerato comprometidos con la salud y el bienestar</p>
         </div>
         
-        <div class="row mb-5">
-          <div class="col-lg-8 mx-auto">
-            <div class="card border-0 shadow-sm p-4">
-              <p class="mb-3">Somos un grupo de estudiantes apasionados por la ciencia y el cuidado personal. Este proyecto nació de nuestra curiosidad sobre cómo mantener hábitos saludables de manera accesible para todos.</p>
-              <p class="mb-3">A través de investigación y consulta con profesionales de la salud, hemos compilado información confiable sobre el cuidado de la piel, adaptada especialmente para estudiantes de nuestra edad.</p>
-              <p class="mb-0">Nuestro objetivo es compartir conocimiento práctico que pueda implementarse fácilmente en la rutina diaria, sin necesidad de productos costosos o complicados.</p>
+        <!-- Descripción del proyecto -->
+        <div class="row justify-content-center mb-5">
+          <div class="col-lg-10">
+            <div class="about-content text-center">
+              <p class="lead">Somos un grupo de estudiantes apasionados por la ciencia y el cuidado personal. Este proyecto nació de nuestra curiosidad sobre cómo mantener hábitos saludables de manera accesible para todos.</p>
+              <p>A través de investigación y consulta con profesionales de la salud, hemos compilado información confiable sobre el cuidado de la piel, adaptada especialmente para estudiantes de nuestra edad.</p>
+              <p>Nuestro objetivo es compartir conocimiento práctico que pueda implementarse fácilmente en la rutina diaria, sin necesidad de productos costosos o complicados.</p>
             </div>
           </div>
         </div>
 
-        <div class="text-center mb-4">
-          <h3 class="h4">Nuestro Equipo</h3>
-          <p class="text-muted">Los estudiantes detrás de este proyecto</p>
-        </div>
-
-        <div class="row g-4">
-          <!-- Miembro 1 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="card border-0 shadow-sm h-100 text-center">
-              <div class="card-body p-4">
-                <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                  <span class="display-4 text-white">👤</span>
+        <!-- Equipo -->
+        <div class="team-section">
+          <h3 class="text-center mb-4">Nuestro Equipo</h3>
+          <p class="text-center text-muted mb-5">Los estudiantes detrás de este proyecto</p>
+          
+          <div class="row g-4">
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="bi bi-person-circle"></i>
                 </div>
-                <h5 class="card-title mb-2">Nombre Estudiante 1</h5>
-                <p class="text-muted small mb-2">Investigador Principal</p>
-                <p class="small mb-0">Encargado de la investigación sobre ingredientes y productos para el cuidado de la piel.</p>
+                <h4>Nombre Estudiante 1</h4>
+                <span class="team-role">Investigador Principal</span>
+                <p>Encargado de la investigación sobre ingredientes y productos para el cuidado de la piel.</p>
               </div>
             </div>
-          </div>
-
-          <!-- Miembro 2 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="card border-0 shadow-sm h-100 text-center">
-              <div class="card-body p-4">
-                <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                  <span class="display-4 text-white">👤</span>
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="bi bi-person-circle"></i>
                 </div>
-                <h5 class="card-title mb-2">Nombre Estudiante 2</h5>
-                <p class="text-muted small mb-2">Diseñador de Contenido</p>
-                <p class="small mb-0">Responsable de crear y organizar los materiales educativos y recursos descargables.</p>
+                <h4>Nombre Estudiante 2</h4>
+                <span class="team-role">Diseñador de Contenido</span>
+                <p>Responsable de crear y organizar los materiales educativos y recursos descargables.</p>
               </div>
             </div>
-          </div>
-
-          <!-- Miembro 3 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="card border-0 shadow-sm h-100 text-center">
-              <div class="card-body p-4">
-                <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                  <span class="display-4 text-white">👤</span>
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="bi bi-person-circle"></i>
                 </div>
-                <h5 class="card-title mb-2">Nombre Estudiante 3</h5>
-                <p class="text-muted small mb-2">Coordinador de Videos</p>
-                <p class="small mb-0">A cargo de seleccionar y verificar videos educativos confiables sobre cuidado de la piel.</p>
+                <h4>Nombre Estudiante 3</h4>
+                <span class="team-role">Coordinador de Videos</span>
+                <p>A cargo de seleccionar y verificar videos educativos confiables sobre cuidado de la piel.</p>
               </div>
             </div>
-          </div>
-
-          <!-- Miembro 4 -->
-          <div class="col-lg-3 col-md-6">
-            <div class="card border-0 shadow-sm h-100 text-center">
-              <div class="card-body p-4">
-                <div class="rounded-circle bg-secondary mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 100px; height: 100px;">
-                  <span class="display-4 text-white">👤</span>
+            <div class="col-lg-3 col-md-6">
+              <div class="team-card">
+                <div class="team-avatar">
+                  <i class="bi bi-person-circle"></i>
                 </div>
-                <h5 class="card-title mb-2">Nombre Estudiante 4</h5>
-                <p class="text-muted small mb-2">Desarrollador Web</p>
-                <p class="small mb-0">Encargado del desarrollo y mantenimiento de la página web del proyecto.</p>
+                <h4>Nombre Estudiante 4</h4>
+                <span class="team-role">Desarrollador Web</span>
+                <p>Encargado del desarrollo y mantenimiento de la página web del proyecto.</p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="text-center mt-5">
-          <div class="card border-0 shadow-sm p-4 d-inline-block">
-            <p class="mb-2"><strong>Contacto del proyecto:</strong></p>
-            <p class="mb-1">📧 Email: proyecto.piel@uei.ec</p>
-            <p class="mb-0">🏫 Club de Ciencias: Viernes 14h00, Aula 12</p>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="py-4 text-center">
-      <p class="mb-1">© 2026 Unidad Educativa Israel - Proyecto hábitos saludables</p>
-      <div class="d-flex justify-content-center gap-3">
-        <a href="#" class="text-decoration-none">
-          <svg width="20" height="20"><use xlink:href="#facebook"></use></svg>
-        </a>
-        <a href="#" class="text-decoration-none">
-          <svg width="20" height="20"><use xlink:href="#twitter"></use></svg>
-        </a>
-        <a href="#" class="text-decoration-none">
-          <svg width="20" height="20"><use xlink:href="#instagram"></use></svg>
-        </a>
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <div class="footer-brand">
+              <span class="logo-icon">🌿</span>
+              <span class="logo-text">Dermactive</span>
+            </div>
+            <p class="footer-description">Tu bienestar comienza con el cuidado de tu piel. Consejos dermatológicos para una vida más saludable.</p>
+            <div class="social-links">
+              <a href="#"><i class="bi bi-facebook"></i></a>
+              <a href="#"><i class="bi bi-instagram"></i></a>
+              <a href="#"><i class="bi bi-twitter-x"></i></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Enlaces</h5>
+            <ul class="footer-links">
+              <li><a href="#inicio">Inicio</a></li>
+              <li><a href="#capas">Capas de la Piel</a></li>
+              <li><a href="#habitos">Rutina</a></li>
+              <li><a href="#tratamientos">Cuidado</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4">
+            <h5>Recursos</h5>
+            <ul class="footer-links">
+              <li><a href="#alimentacion">Alimentación</a></li>
+              <li><a href="#glosario">Glosario</a></li>
+              <li><a href="#nosotros">Nosotros</a></li>
+              <li><a href="#videos">Videos</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4">
+            <h5>Proyecto Escolar</h5>
+            <p>Proyecto de 2do de bachillerato sobre el cuidado de la piel.</p>
+            <p class="small text-muted">Hecho con ❤️ por estudiantes</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2026 Dermactive. Todos los derechos reservados.</p>
+        </div>
       </div>
     </footer>
 
+    <!-- Flores cayendo (solo en hero) -->
+    <div class="falling-flowers" id="fallingFlowers"></div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script>
+      // Generador de flores cayendo (solo en hero)
+      let flowersEnabled = true;
+      
+      function createFlower() {
+        if (!flowersEnabled) return;
+        
+        const container = document.getElementById('fallingFlowers');
+        const flower = document.createElement('div');
+        flower.className = 'flower';
+        
+        // Tipos de flores/pétalos
+        const flowers = ['🌸', '🌺', '🌷', '💮', '✿'];
+        flower.textContent = flowers[Math.floor(Math.random() * flowers.length)];
+        
+        // Posición horizontal aleatoria
+        flower.style.left = Math.random() * 100 + 'vw';
+        
+        // Tamaño aleatorio (más pequeño)
+        const size = Math.random() * 12 + 12;
+        flower.style.fontSize = size + 'px';
+        
+        // Duración de caída
+        const duration = Math.random() * 4 + 6;
+        flower.style.animationDuration = duration + 's';
+        
+        // Opacidad más suave
+        flower.style.opacity = Math.random() * 0.3 + 0.2;
+        
+        container.appendChild(flower);
+        
+        // Eliminar después de la animación
+        setTimeout(() => {
+          flower.remove();
+        }, duration * 1000);
+      }
+      
+      // Crear flores solo cada 2 segundos (menos frecuente)
+      const flowerInterval = setInterval(createFlower, 2000);
+      
+      // Crear solo 5 flores iniciales
+      for (let i = 0; i < 5; i++) {
+        setTimeout(createFlower, i * 400);
+      }
+      
+      // Detener flores cuando se hace scroll más allá del hero
+      window.addEventListener('scroll', function() {
+        const heroHeight = document.getElementById('inicio').offsetHeight;
+        if (window.scrollY > heroHeight * 0.5) {
+          flowersEnabled = false;
+          document.getElementById('fallingFlowers').style.opacity = '0';
+        } else {
+          flowersEnabled = true;
+          document.getElementById('fallingFlowers').style.opacity = '1';
+        }
+      });
+
+      // Smooth scrolling para los enlaces de navegación
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute('href'));
+          if (target) {
+            target.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+
+      // Cambiar estilo del header al hacer scroll
+      window.addEventListener('scroll', function() {
+        const header = document.getElementById('header');
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    </script>
   </body>
 </html>
