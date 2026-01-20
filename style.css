@@ -78,7 +78,7 @@
   --font-body: 'Poppins', Arial, sans-serif;
   
   /* Espaciado */
-  --section-padding: 100px 0;
+  --section-padding: 60px 0;
   --border-radius: 20px;
   --border-radius-sm: 12px;
   
@@ -539,12 +539,14 @@ img {
 
 .habito-card {
   background: var(--color-white);
-  padding: 1.75rem;
+  padding: 1.75rem 1.75rem 1.75rem 1.5rem;
   border-radius: var(--border-radius-sm);
   box-shadow: var(--shadow-card);
   position: relative;
-  padding-left: 5.5rem;
   transition: var(--transition);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .habito-card:hover {
@@ -553,15 +555,18 @@ img {
 }
 
 .habito-number {
-  position: absolute;
-  left: 1.5rem;
-  top: 50%;
-  transform: translateY(-50%);
+  flex-shrink: 0;
   font-family: var(--font-heading);
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 700;
   color: var(--color-accent);
-  opacity: 0.6;
+  opacity: 0.5;
+  line-height: 1;
+  margin-top: 0.2rem;
+}
+
+.habito-content-text {
+  flex: 1;
 }
 
 .habito-card h4 {
@@ -939,31 +944,114 @@ img {
 }
 
 /* Improve appearance of main section images (consistent rounded corners + shadow) */
-.img-fluid.rounded-4.shadow-soft,
+.img-fluid.rounded-4.shadow-soft {
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0,0,0,0.08);
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+}
+
 .hero-image {
   border-radius: 18px;
   box-shadow: 0 18px 45px rgba(0,0,0,0.08);
-  object-fit: contain; /* show full image without cutting */
+  object-fit: cover;
   width: 100%;
-  height: auto;
-  max-height: 500px;
+  height: 500px;
 }
 
 /* Crop the bottom of specific images to hide unwanted details/text */
 .img-crop-bottom {
   object-fit: cover;
-  object-position: 50% 40%; /* shift image up to hide lower area */
-  height: 400px;
+  object-position: 50% 40%;
+  height: 450px;
+}
+
+@media (min-width: 1200px) {
+  .img-fluid.rounded-4.shadow-soft {
+    height: 500px;
+  }
+  
+  .hero-image {
+    height: 550px;
+  }
+  
+  .img-crop-bottom {
+    height: 500px;
+  }
+}
+
+/* Capas section: make left column images share the height of the right column */
+#capas-row {
+  align-items: stretch;
+}
+
+#capas-row .capas-left {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+#capas-row .capas-left .capa-image {
+  flex: 1 1 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+  box-sizing: border-box; /* ensure padding is included in size calculations */
+  display: block;
+}
+
+/* Make the second (lower) image larger than the top one to fill space better */
+#capas-row .capas-left {
+  max-height: 560px; /* keep the original height cap */
+  overflow: hidden;
+}
+
+/* make top image smaller and bottom one larger to balance layout */
+#capas-row .capas-left .capa-image:last-child {
+  /* unified: no separate white frame — keep same styling as the top image */
+  flex: 1 1 60%;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 14px;
+  box-shadow: var(--shadow-soft);
+}
+
+
+@media (min-width: 1200px) {
+  #capas-row .capas-left { max-height: 880px; }
 }
 
 @media (max-width: 991px) {
+  /* On smaller screens stack normally */
+  #capas-row { align-items: stretch; }
+  #capas-row .capas-left { display: block; }
+  #capas-row .capas-left .capa-image { height: auto; width: 100%; margin-top: 1rem; }
+
+  .img-fluid.rounded-4.shadow-soft {
+    height: 380px;
+  }
+  
+  .hero-image {
+    height: 400px;
+  }
+  
   .img-crop-bottom {
     object-position: 50% 45%;
-    height: 350px;
+    height: 380px;
   }
 }
 
 @media (max-width: 576px) {
+  .img-fluid.rounded-4.shadow-soft {
+    height: 300px;
+  }
+  
+  .hero-image {
+    height: 320px;
+  }
+  
   .img-crop-bottom {
     object-position: 50% 50%;
     height: 300px;
@@ -1182,8 +1270,15 @@ img {
   h2 { font-size: 1.75rem; }
   h3 { font-size: 1.35rem; }
   
+  /* Reduce hero vertical space and improve mobile rhythm */
+  .hero-section {
+    padding: 40px 0;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+    line-height: 1.05;
+    margin-bottom: 0.8rem;
   }
   
   .hero-buttons {
@@ -1199,6 +1294,105 @@ img {
     padding: 2rem;
   }
   
+  /* Make section descriptions use available width on small screens */
+  .section-description {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  /* Tighten vertical spacing of habit cards for mobile and improve hierarchy */
+  .habitos-content {
+    gap: 0.9rem;
+  }
+
+  .habito-card {
+    padding: 1rem 1rem;
+    border-radius: 12px;
+  }
+
+  .habito-number {
+    font-size: 2rem;
+    margin-top: 0.1rem;
+    margin-right: 0.75rem;
+    opacity: 0.65;
+  }
+
+  .habito-card h4 {
+    font-size: 1.05rem;
+    margin-bottom: 0.75rem; /* more separation between title and paragraph */
+  }
+
+  .habito-card p {
+    font-size: 0.98rem;
+    line-height: 1.6;
+  }
+  
+}
+
+/* Enhance habit card appearance on larger screens: subtle text block */
+@media (min-width: 768px) {
+  .habito-content-text {
+    background: var(--color-gray-light);
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}
+
+/* Small screens: stack number above title and reduce number dominance */
+@media (max-width: 576px) {
+  .habito-card {
+    display: block;
+    padding: 0.9rem 0.9rem;
+  }
+
+  .habito-number {
+    display: block;
+    grid-column: auto;
+    grid-row: auto;
+    font-size: 2.2rem;
+    opacity: 0.4;
+    margin-bottom: 0.35rem;
+    text-align: left;
+  }
+
+  .habito-content-text {
+    padding: 0;
+  }
+}
+
+/* Very small screens: further reduce number prominence */
+@media (max-width: 480px) {
+  .habito-number {
+    font-size: 2rem;
+    opacity: 0.3;
+  }
+}
+
+/* Extra small screens: improve hierarchy and reduce number dominance */
+@media (max-width: 480px) {
+  .habito-card {
+    padding: 0.9rem 0.9rem;
+    gap: 0.6rem;
+  }
+
+  .habito-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .habito-card p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .habito-number {
+    font-size: 2.5rem; /* slightly smaller on very small screens */
+    opacity: 0.35; /* reduce dominance */
+  }
+
+  .section-description {
+    padding: 0 0.75rem;
+  }
 }
 
 /* Ajuste para pantallas medianas-grandes */
